@@ -1,0 +1,23 @@
+.loginContainer {
+    background-color: #f8f9fa;
+  }
+  
+  .formColumn {
+    padding: 0 50px;
+  }
+  
+  .illustration-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .illustration-column {
+    text-align: right;
+    padding-right: 50px;
+  }
+  
+  .illustration-image {
+    max-width: 80%;
+  }
