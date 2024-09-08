@@ -29,7 +29,7 @@ const CountryList = ({selectedContinent}) => {
 
   const bodyData = () => {
     const size = initialSize * count;
-    return filteredCountries?.filter((data,index)=>  index < size-1);
+    return filteredCountries?.filter((data,index)=>  index < size);
   }
 
   return (
