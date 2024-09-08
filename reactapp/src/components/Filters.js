@@ -7,13 +7,15 @@ const Filters = ({ selectedContinent, setSelectedContinent }) => {
   return (
     <div className="filters-container">
       {continents.map((continent) => (
-        <button
+        <nav className="continent-filters">
+        <a
           key={continent}
           className={`filter-btn ${selectedContinent === continent ? 'active' : ''}`}
           onClick={() => setSelectedContinent(continent)}
         >
           {continent}
-        </button>
+        </a>    
+        </nav>  
       ))}
     </div>
   );

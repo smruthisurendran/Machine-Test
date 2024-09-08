@@ -46,8 +46,8 @@ const CountryList = ({selectedContinent}) => {
         ))}
       </div>
       <div className="load-more-container">
-        <button className="load-more-btn" onClick={loadBtnClk}>Load More</button>
-      </div>
+        <button className="load-more-btn" onClick={loadBtnClk}>Load More</button>      
+      </div>     
     </div>
   );
 };

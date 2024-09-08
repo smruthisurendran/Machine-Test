@@ -17,7 +17,7 @@
   .form-input {
     border-radius: 0;
     margin-bottom: 20px;
-    width: 15rem;
+    width: 22rem;
     height: 1.5rem;
   }
   
@@ -28,7 +28,8 @@
     font-size: 1.1rem;
     padding: 10px 0;
     color: gray;
-    width: 15rem;
+    width: 22rem;
+    height: 2.5rem;
   }
   
   .remember-me {
@@ -43,23 +44,47 @@
   }
   
   .line {
-    flex-grow: 0.5;
-    height: 1px;
-    background-color: #ccc;
-    border: none;
+    width: 3px;
+    height: 0;
+    border: 1px solid #C4C4C4;
+    margin-top: 3px;
+    display:inline-block;
+    margin-left:2px;
+    padding-right: 2px;
+  }
+
+  .line2 {
+    width: 53px;
+    height: 1;
+    border: 1px solid #C4C4C4;
+    margin-top: 3px;
+    padding-right: 2px;
+    display:inline-block;
   }
   
   .social-text {
     font-size: 14px;
     margin: 0 8px;
     color: #000;
+    display: inline-block;
   }
   
   .social-icons {
     display: flex;
     justify-content: space-around;
   }
+
+  .social-icon {
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
+    color: rgb(34, 31, 31);
+  }
   
   .social-icon :hover {
     background-color: #e0e0e0;
+  }
+
+  .text-danger{
+    color: rgb(243, 62, 62);
   }

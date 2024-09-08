@@ -38,7 +38,6 @@ const Slider = () => {
         ))}
       </div>
 
-      {/* Navigation Buttons */}
       <button className="slider-btn left" onClick={handlePrev}>
         &#10094;
       </button>
@@ -46,7 +45,6 @@ const Slider = () => {
         &#10095;
       </button>
 
-      {/* Dots */}
       <div className="slider-dots">
         {images.map((_, index) => (
           <span

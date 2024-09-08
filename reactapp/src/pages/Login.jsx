@@ -13,11 +13,10 @@ const Login = () => {
 
         <Col md={6} className="d-none d-md-block illustration-column">
           <div className="illustration-wrapper">
-            <img
+            {/* <img
               src="path/to/person-and-key.png"
-              alt="Person with Key"
               className="illustration-image"
-            />
+            /> */}
           </div>
         </Col>
       </Row>

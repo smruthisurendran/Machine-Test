@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import {  Col, Row } from "react-bootstrap";
+import { FaFacebook, FaGoogle, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Slider from '../components/Slider';
 import CountryList from '../components/CountryList';
 import "../styles/Home.css";
@@ -10,27 +12,38 @@ const Home = () => {
 
   return (
     <div className="home-page">
-      <h1 className="text-center my-4">WELCOME</h1>
+
+      <header className="header">
+        <div className="header-title">Countries</div>
+        <div className="continent-filter">
+        <Filters selectedContinent={selectedContinent} setSelectedContinent={setSelectedContinent} />
+      </div>
+      </header>
+
+      <section className="welcome-section">
+        <div className="line"></div>
+        <h1 className="welcome-text">WELCOME</h1>
+        <div className="line2"></div>
+      </section>
+
       <div className="slider-container">
         <Slider />
       </div>
-      <div className='continent-filter'>
-        {/* <button className="active">All</button>
-        <button>Asia</button>
-        <button>Europe</button> */}
-        <Filters selectedContinent={selectedContinent} setSelectedContinent={setSelectedContinent} />
-      </div>
+      
       <div className="country-list-container">
         <CountryList  selectedContinent={selectedContinent} setSelectedContinent={setSelectedContinent}/>
       </div>
+      
       <footer className="row text-center mt-5">
         <div className="col">
-          <p>&copy; 2024 Example. All rights reserved.</p>
-          <div className="social-icons">
-            <a href="#"><i className="fab fa-facebook-f"></i></a>
-            <a href="#"><i className="fab fa-twitter"></i></a>
-            <a href="#"><i className="fab fa-linkedin-in"></i></a>
-          </div>
+        <div className="home-icons">         
+            <FaGoogle size={30} className="home-icon" />   
+            <FaFacebook size={30} className="home-icon" />     
+            <FaLinkedin size={30} className="home-icon" />       
+            <FaTwitter size={30} className="home-icon" />    
+        </div>
+        <h3>Eample@email.com</h3>
+          <p>Copyright &copy; 2024 Example. All rights reserved.</p>
         </div>
       </footer>
     </div>

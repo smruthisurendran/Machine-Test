@@ -71,7 +71,7 @@ const LoginForm = () => {
         <div className="divider">
           <hr className="line" />
           <span className="social-text"> Or Sign In With</span>
-          <hr className="line" />
+          <hr className="line2" />
         </div>
         <Row className="social-icons">
           <Col>
